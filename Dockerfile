@@ -3,11 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
     python3.12 \
     python3-pip \
-    python3.12-venv \
     git 
-
-RUN python3 -m venv .venv
-RUN source .venv/bin/activate
 
 RUN pip3 install PyYAML
 
